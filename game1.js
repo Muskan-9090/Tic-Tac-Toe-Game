@@ -4,6 +4,7 @@ let message = document.querySelector("#msg");
 let newbtn = document.querySelector("#new");
 let winner = document.querySelector(".win");
 let game = document.querySelector(".all");
+let player = document.querySelector("#turn");
 var count = 0;
 game.classList.remove("hidden");
 let turn_x = true;
@@ -13,10 +14,12 @@ boxes.forEach((box)=>{
        if(!box.innerText){
         if(turn_x){
             box.innerText = "X";
+            player.innerText = "Player : O's Turn";
             turn_x = false;
             }
            else{
             box.innerText = "O";
+            player.innerText = "Player : X's Turn";
             turn_x = true;
            }
            box.disabled = true;

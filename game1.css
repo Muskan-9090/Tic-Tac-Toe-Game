@@ -53,6 +53,7 @@ body{
     background-color: black;
     border-radius: 2px;
     font-weight: bold;
+    width:100px;
 }
 #new{
     padding:40px;
@@ -69,4 +70,10 @@ body{
 }
 .hide , .hidden{
     display: none;
+}
+#turn{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;;
 }
